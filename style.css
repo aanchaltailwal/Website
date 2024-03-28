@@ -1,0 +1,339 @@
+body{
+    margin:0px;       /*background should start from very left/right*/
+    padding:0px;
+}
+.header{
+    background-color:rgb(33, 33, 56);
+}
+.header h2{
+    margin:0px;    /*menu should be exact below the course*/                      /*............................*/
+}
+ul{
+    margin:0px;       /*block cr should cover whole block*/
+    padding:0px;
+}
+.my_menu{
+    position: absolute; /*acc to the content*/
+    width: 100%;
+    height:auto;     /*acc to the screen*/
+    background-color:rgb(33, 33, 56);
+}
+
+.menu li{
+    list-style: none;   /*home,about boxes*/ 
+    width: 130px;
+    height: 75px;
+    background-color: rgb(33, 33, 56); 
+    margin-left: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height:50px;
+    float:left;
+}
+.menu li:hover{           /*hove=click*/
+    background-color:darkcyan;     /*change the color of home box when coror will be there*/
+}
+.menu li a{      
+    color: white;   /*for text inside home box*/
+    display:block;    
+    text-decoration: none;   /*no underline in text*/
+}
+.logo{
+    width: 80px;    /*logo width*/
+}
+.logo_li:hover{
+    background-color: rgb(33, 33, 56) ! important;   /*logo bckgrnd should be same as bckgrnd clr*/
+}
+.menu ul li{
+    margin:0px;    /*menu should be exact below the course*/                      /*............................*/
+}
+.menu ul{
+    display: none; /*no menu until clicked*/
+}
+.menu li:hover ul{
+    display: block;  /*drop down mwnu should open when clicked*/
+}
+/*home*/
+#kingsway_skl{
+    width:100%;
+    text-align: center;
+}
+.div_section h2{
+    margin:0 auto;           /*exact center*/
+    width: 250px;
+    text-align: center;
+}
+.div_section p{
+    font-size: 20px;
+}
+/*automatic slideshow*/
+.slowFade {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.slowFade .slide img {
+    margin-top: 75px;
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    -webkit-animation: slowFade 20s infinite;
+            animation: slowFade 20s infinite;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
+}
+.menu {
+    position: relative;
+    z-index: 2;                  /* Set a higher z-index value for the menu */
+  }
+@keyframes slowFade {
+    25% {
+        opacity: 1;   
+    }
+    40% {
+        opacity: 0;
+    }
+}
+#banner{                /*banner*/
+    width: 100%;
+}
+#banner img{
+    margin-top: 50px;
+    width:100%;
+}
+
+
+
+/*Introduction*/
+
+.intro{
+    margin: 0 auto;
+    display: inline-block;      /*space between our skl details and why us*/
+    width:100%;
+    
+}
+.intro h1{
+    margin:0 auto;           /*exact center*/
+    width: 250px;            /*same as above*/
+    font-size:35px;
+    color:rgb(33, 33, 56);
+    text-align: center;
+
+}
+.div_intro{
+    width:45%;
+    height:300px;
+    margin: 30px; /*margin b/w sections*/
+    float: left;   /*sections should be left to right*/
+   
+}
+.div_intro img{
+    width: 100%;               /*so that it should not be so big (100* of up 30%)*/
+    height: 100%;
+    
+}
+/*special features*/
+.special_features{
+    width:auto;
+    height: auto;
+    margin:10px;
+    border: 3px solid rgb(33, 33, 56);
+    background-color: rgb(70, 70, 129);
+
+    
+}
+/*Our mission*/
+.mission{
+    margin: 0 auto;
+    display: inline-block;      /*space between our skl details and why us*/
+    width:100%;
+    text-align: center;
+    
+}
+.mission h1{
+    margin:0 auto;           /*exact center*/
+    width: 250px;            /*same as above*/
+    font-size:35px;
+    color:rgb(33, 33, 56);
+    text-align: center;
+
+}
+.div_mission{
+    width:45%;
+    height:300px;
+    margin: 20px; /*margin b/w sections*/
+    float: right;   /*sections should be left to right*/
+   
+}
+.div_mission img{
+    width: 100%;               /*so that it should not be so big (100* of up 30%)*/
+    height: 100%;
+    
+}
+/*motto*/
+.motto{
+    width:auto;
+    height: auto;
+    margin:10px;
+    border: 2px solid rgb(33, 33, 56);
+    text-align: center;
+    background-color: rgb(33, 33, 56);
+    color: antiquewhite;
+}
+/*administration*/
+.admin{
+    margin: 0 auto;
+    display: inline-block;      /*space between our skl details and why us*/
+    width:100%;
+    text-align: center;
+    
+}
+.admin h1{
+    margin:0 auto;           /*exact center*/
+    width: 250px;            /*same as above*/
+    font-size:35px;
+    color:rgb(33, 33, 56);
+    text-align: center;
+
+}
+.div_admin{
+    width:45%;
+    height:300px;
+    margin: 30px; /*margin b/w sections*/
+    float: left;   /*sections should be left to right*/
+   
+}
+.div_admin img{
+    width: 100%;               /*so that it should not be so big (100* of up 30%)*/
+    height: 100%;
+    
+}
+/*house color*/
+.div_admin h3{
+    width:auto;
+    height: auto;
+    margin:auto;
+    border: 2px solid rgb(33, 33, 56);
+    text-align: center;
+    background-color: rgb(33, 33, 56);
+}
+/*facilities*/
+#why_choose{
+    width:100%;
+    text-align: center;
+}
+#why_choose h1{
+    margin:0 auto;           /*exact center*/
+    width: 250px;
+    font-size:30px;
+    color:rgb(33, 33, 56);
+    border-bottom: 2px solid rgb(33, 33, 56);
+    border-bottom-width: 5px;
+}
+.div_section1{
+    width:20%;
+    height:300px;
+    margin: 30px; /*margin b/w sections*/
+                /* border: 1px solid gray;(no (no border req it was for our convenience)*/
+    float: left;   /*sections should be left to right*/
+}
+.icon{
+    width:120px;
+    height:120px;
+    border: 1px solid gray;
+    margin:0 auto;                        /*exact centre*/
+    line-height:110px;                    /*space from up section*/
+    font-size:50px;                      /*inc the size of icon*/
+    background-color:rgb(33, 33, 56) ;    
+    color: white;                       /*icon color*/
+    border-radius: 100px;
+    transition-duration: 0.3s;             /*dur it will hover the icon*/
+}
+.icon:hover{
+    font-size: 40px;         /*as uh'll click on icon it size will dec*/
+}
+
+.section2{
+    display: inline-block;      /*space between our skl details and why us*/
+    width:100%;
+    text-align: center;
+}
+.section2 h1{
+    margin:0 auto;           /*exact center*/
+    width: 250px;            /*same as above*/
+    font-size:30px;
+    color:rgb(33, 33, 56);
+    border-bottom: 2px solid rgb(33, 33, 56);
+    border-bottom-width: 5px;
+}
+
+.div_section2{
+    width:30%;
+    height:300px;
+    margin: 20px; /*margin b/w sections*/
+    float: left;   /*sections should be left to right*/
+   
+}
+.div_section2 img{
+    width: 100%;               /*so that it should not be so big (100* of up 30%)*/
+    height: 100%;
+}
+/*footer*/
+.footer{
+    position: absolute;                /*acc to screen*/
+    width:100%;
+    height: auto;            /*height for background clr*/
+    background-color: black;
+    overflow: hidden;
+}
+.footer_div{
+    width:20%;
+    height:300px;
+    margin: 30px; /*margin b/w sections*/
+    float: left;   /*sections should be left to right*/
+}
+.footer_div h1{
+    color:darkcyan;
+}
+.footer_div p{
+    color:white;
+}
+.footer_div button{
+    background-color: darkcyan;
+    border: none;              /*no border in button*/
+    color:white;
+    width: 100px;
+    height:40px;
+}
+.footer_div ul li {
+   list-style: none;
+}
+.footer_div ul li a{
+    color:white;         /*links color should be white not blue*/
+    text-decoration: none;            /*remove undrline*/
+    font-weight: bold;
+}
+.social_links{
+    color:white; 
+}
+.under_footer{
+    display: inline-block;
+    width:100%;
+    height:60px;
+    text-align: center;
+    background-color: white;
+
+}
+.footer1{
+    width:50%;
+    float:left;
+}
+.footer1 p{
+    color: black;
+}
